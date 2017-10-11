@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/angularjs.medi-com.info/webstat"
+AuthUserFile /var/www/kiv1775/data/etc/92538837.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>

@@ -1,0 +1,153 @@
+*{
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+}
+
+
+
+html{
+	background:#CCC;
+	text-align: center;
+	height:100%;
+	font-size: 20px;
+	font-family: "Raleway", "Helvetica Neue", "Helvetica", Verdana, Arial, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
+body{
+	height:100%;
+	color:white;
+    
+	text-shadow:1px 1px 0 #000;
+}
+
+
+
+a:link, a:visited{
+	color:#E0CB77;
+	text-decoration: none;
+}
+a:active{
+	color:#3F5263;
+}
+a:hover{
+	text-decoration: underline;
+}
+a.btn {
+	border: 3px solid #E0CB77;
+	font-family: inherit;
+	font-size: inherit;
+	text-decoration: none;
+	color: white ;
+	background: transparent;
+	cursor: pointer;
+	padding: 1.4rem 4rem;
+	display:inline-block;
+	text-align:center;
+	margin:0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	outline: none;
+	position: relative;
+	border-radius:2px;
+	-webkit-transition:all 0.1s ease-in-out;
+	   -moz-transition:all 0.1s ease-in-out;
+	        transition:all 0.1s ease-in-out;
+}
+a.btn:hover{
+	background:#E0CB77;
+	color:white;
+}
+
+
+/* Text Styles for the page */
+h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	margin-bottom:20px;
+}
+h2 {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	line-height: 4rem;
+	margin-bottom:20px;
+}
+h3 {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	line-height: 2.5rem;
+	margin-bottom:20px;
+}
+p {
+	font-size: 1rem;
+	line-height: 2rem;
+	text-shadow:none;
+}
+blockquote {
+	font-size: 1.2rem;
+}
+pre {
+	font-size: 0.9rem;
+}
+
+
+
+/*
+================================================
+*/
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url(../img/fulton-1.jpg);
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url(../img/fulton-2.jpg);
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url(../img/fulton-3.jpg);
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
